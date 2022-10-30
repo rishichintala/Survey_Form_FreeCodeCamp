@@ -40,13 +40,13 @@
         </div>
         <div>
             <p>Would you recommend Netflix to a friend?</p>
-            <label><input type="radio" checked>Definetely</label>
-            <label><input type="radio" >Maybe</label>
-            <label><input type="radio">Not Sure</label>
+            <label><input type="radio" checked> Definetely</label>
+            <label><input type="radio" > Maybe</label>
+            <label><input type="radio"> Not Sure</label>
         </div>
         <div>
             <p>What do you watch on Netflix the most?</p>
-            <select>
+            <select required>
                 <option disabled selected>Select an option</option>
                 <option >Movies</option>
                 <option >Tv Shows</option>
@@ -55,7 +55,19 @@
                 <option >Animated Series</option>
                 <option >Anime</option>
             </select>
-
+        </div>
+        <div>
+            <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+            <label><input type="checkbox"> Movies</label>
+            <label><input type="checkbox"> Tv Shows</label>
+            <label><input type="checkbox"> Documentaries</label>
+            <label><input type="checkbox"> Animated Movies</label>
+            <label><input type="checkbox"> Animated Series</label>
+            <label><input type="checkbox"> Anime</label>
+        </div>
+        <div>
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="Please write comments or suggestions here...." required></textarea>
         </div>
     </form>
     </div>
