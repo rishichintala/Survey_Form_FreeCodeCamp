@@ -10,66 +10,69 @@
 
 <body>
     <div>
-    <header>
-        <h1 id="title">Netflix Survey Form</h1>
-        <p id="description">This form helps Netflix to understand user's interest</p>
-    </header>
-    <form id="survey-form" method="post">
-        <div>
-        <label>Name</label>
-        <input type="text" required>
-        </div>
-        <div>
-        <label>Email</label>
-        <input type="email" required>
-        </div>
-        <div>
-        <label>Age<span>(Optional)</span></label>
-        <input type="number" min="12" max="100" >
-        </div>
-        <div>
-            <p>Which option best describes your current role?</p>
-            <select required>
-                <option disabled selected>Select Current Role</option>
-                <option>Student</option>
-                <option>Full Time Job</option>
-                <option>Self Employment</option>
-                <option>Prefer not to say</option>
-                <option>Other</option>
-            </select>
-        </div>
-        <div>
-            <p>Would you recommend Netflix to a friend?</p>
-            <label><input type="radio" checked> Definetely</label>
-            <label><input type="radio" > Maybe</label>
-            <label><input type="radio"> Not Sure</label>
-        </div>
-        <div>
-            <p>What do you watch on Netflix the most?</p>
-            <select required>
-                <option disabled selected>Select an option</option>
-                <option >Movies</option>
-                <option >Tv Shows</option>
-                <option >Documentaries</option>
-                <option >Animated Movies</option>
-                <option >Animated Series</option>
-                <option >Anime</option>
-            </select>
-        </div>
-        <div>
-            <p>What would you like to see improved?<span>(Check all that apply)</span></p>
-            <label><input type="checkbox"> Movies</label>
-            <label><input type="checkbox"> Tv Shows</label>
-            <label><input type="checkbox"> Documentaries</label>
-            <label><input type="checkbox"> Animated Movies</label>
-            <label><input type="checkbox"> Animated Series</label>
-            <label><input type="checkbox"> Anime</label>
-        </div>
-        <div>
-            <p>Any comments or suggestions?</p>
-            <textarea placeholder="Please write comments or suggestions here...." required></textarea>
-        </div>
-    </form>
+        <header>
+            <h1 id="title">Netflix Survey Form</h1>
+            <p id="description">This form helps Netflix to understand user's interest</p>
+        </header>
+        <form id="survey-form" method="post">
+            <div>
+                <label id="name-label">Name</label>
+                <input id="name" type="text" required>
+            </div>
+            <div>
+                <label id="email-label">Email</label>
+                <input id="email" type="email" required>
+            </div>
+            <div>
+                <label id="number-label">Age<span>(Optional)</span></label>
+                <input id="number" type="number" min="12" max="100">
+            </div>
+            <div>
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" required>
+                    <option disabled selected>Select Current Role</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Self Employment</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <p>Would you recommend Netflix to a friend?</p>
+                <label><input name="radio" type="radio" checked> Definetely</label>
+                <label><input name="radio" type="radio"> Maybe</label>
+                <label><input name="radio" type="radio"> Not Sure</label>
+            </div>
+            <div>
+                <p>What do you watch on Netflix the most?</p>
+                <select required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="movies">Movies</option>
+                    <option value="tvshows">Tv Shows</option>
+                    <option value="documentaries">Documentaries</option>
+                    <option value="animatedmovies">Animated Movies</option>
+                    <option value="animatedseries">Animated Series</option>
+                    <option value="anime">Anime</option>
+                </select>
+            </div>
+            <div>
+                <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+                <label><input value="movies" type="checkbox"> Movies</label>
+                <label><input value="tvshows" type="checkbox"> Tv Shows</label>
+                <label><input value="documentaries" type="checkbox"> Documentaries</label>
+                <label><input value="animatedmovies" type="checkbox"> Animated Movies</label>
+                <label><input value="animatedseries" type="checkbox"> Animated Series</label>
+                <label><input value="anime" type="checkbox"> Anime</label>
+            </div>
+            <div>
+                <p>Any comments or suggestions?</p>
+                <textarea placeholder="Please write comments or suggestions here...." required></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
     </div>
 </body>
 
